@@ -1,0 +1,19 @@
+n = int(input("Enter max no. of candies: "))
+k = int(input("Enter min no. of candies: "))
+r = n
+ts = 0
+while True:
+    m = int(input("Enter amount of candies needed(if not needed enter 0): "))
+    if m == 0:
+        break
+    if m <= 0 or m > r or m > k:
+        print("Invalid input")
+        print("Remaining =", r)
+    else:
+        r -= m
+        ts += m
+        print("SOLD =", m)
+        if r <= k:
+            r = n
+        print("Remaining =", r)
+print("Total Candies Sold =", ts)
