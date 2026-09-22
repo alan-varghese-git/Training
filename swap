@@ -1,0 +1,33 @@
+print("Using a temporary variable")
+x1 = int(input("Enter first number (x): "))
+y1 = int(input("Enter second number (y): "))
+temp = x1
+x1 = y1
+y1 = temp
+print("x1=",x1)
+print("y1=",y1)
+
+print("Using ,")
+x2 = int(input("Enter first number (x): "))
+y2 = int(input("Enter second number (y): "))
+x2,y2 = y2,x2
+print("x2=",x2)
+print("y2=",y2)
+
+print("Using + and -")
+x3 = int(input("Enter first number (x): "))
+y3 = int(input("Enter second number (y): "))
+x3 = x3+y3
+y3 = x3-y3
+x3 = x3-y3
+print("x3=",x3)
+print("xy3=",y3)
+
+print("Using XOR")
+x4 = int(input("Enter first number (x): "))
+y4 = int(input("Enter second number (y): "))
+x4 = x4^y4
+y4 = x4^y4
+x4 = x4^y4
+print("x4=",x4)
+print("y4=",y4)
