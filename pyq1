@@ -1,0 +1,13 @@
+n=int(input("Total Monkeys (n): "))
+k= int(input("Number of eatable Bananas by Single Monkey (k): "))
+j= int(input("Number of eatable Peanuts by single Monkey (j): "))
+m= int(input("Total number of Bananas (m): "))
+p= int(input("Total number of Peanuts (p): "))
+if k==0 or j==0:
+  print("INVALID INPUT")
+else:
+  r=(m//k)+(p//j)
+  if m%k>0 or p%j>0:
+    r=r-1
+print("Monkey ate are ",r)
+print("Monkey on tree are",n-r)
