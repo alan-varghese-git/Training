@@ -1,0 +1,12 @@
+n=int(input())
+if n==0:
+    print(0)
+else:
+    rank=list(map(int,input().split()))
+    min=rank[0]
+    cuts=0
+    for i in range(1,n):
+        if rank[i]<min:
+            cuts+=1
+            min=rank[i]
+    print(cuts)
